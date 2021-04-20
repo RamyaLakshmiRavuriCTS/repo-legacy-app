@@ -11,7 +11,7 @@
 	<tr><td>
 	<% String username = request.getParameter("username"); %>
 <h2>Welcome to the page.</h2><br><h3> Hello <% out.println(username); %>.</h3><br><a>You have logged in.</a></td></tr>
-<tr></tr><tr><td></td><td></td><td><a href="login.jsp"><b>Logout</b></a></td></tr>
+<tr></tr><tr><td></td><td></td><td><a href="LoginPage.jsp"><b>Logout</b></a></td></tr>
 </table>
 </body>
 </html>
