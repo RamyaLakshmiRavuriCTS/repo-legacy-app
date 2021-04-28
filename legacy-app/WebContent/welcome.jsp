@@ -7,11 +7,11 @@
 <title>Guru Logged In</title>
 </head>
 <body>
-	<table style="with: 50%">
+	<table style="width: 50%">
 	<tr><td>
 	<% String username = request.getParameter("username"); %>
 <a>Welcome page: display Hello  <% out.println(username); %> !!!!</a></td></tr>
-<tr></tr><tr><td></td><td></td><td><a href="LogIn.jsp"><b>Logout</b></a></td></tr>
+<tr></tr><tr><td></td><td></td><td><a href="logIn.jsp"><b>Logout</b></a></td></tr>
 </table>
 </body>
 </html>

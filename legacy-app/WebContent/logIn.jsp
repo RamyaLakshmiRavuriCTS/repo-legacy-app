@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Guru Login Form</title>
+<title>Login Form</title>
 </head>
 <body>
-<form action="Welcomepage" method="get">
+<form action="welcomepage" method="get" id="login">
 		<table style="with: 50%">
  
 			<tr>

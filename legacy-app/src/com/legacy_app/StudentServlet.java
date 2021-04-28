@@ -9,17 +9,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-
-
-@WebServlet("/StudentServlet")
+/*
+ * This is StudentServlet Class
+ */
+@WebServlet("/studentServlet")
 public class StudentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
    
     public StudentServlet() {
         super();
     }
-
+/*
+ * This is doGet method
+ */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		response.setContentType("text/html");
@@ -56,10 +58,11 @@ public class StudentServlet extends HttpServlet {
 			    out.close(); 
 		
 	}
-
+/*
+ * This is doPost method
+ */
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
