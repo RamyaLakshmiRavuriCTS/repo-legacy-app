@@ -7,8 +7,8 @@
 <title>Login Form</title>
 </head>
 <body>
-<form action="LoginForm" method="post">
-		<table style="with: 50%">
+<form name="LoginForm" action="LoginForm" method="post">
+		<table style="width: 50%">
  
 			<tr>
 				<td>UserName</td>

@@ -7,7 +7,7 @@
 <title>Logged In</title>
 </head>
 <body>
-	<table style="with: 50%">
+	<table style="width: 50%">
 	<tr><td>
 	<% String username = request.getParameter("username"); %>
 <h2>Welcome to the page.</h2><br><h3> Hello <% out.println(username); %>.</h3><br><a>You have logged in.</a></td></tr>
