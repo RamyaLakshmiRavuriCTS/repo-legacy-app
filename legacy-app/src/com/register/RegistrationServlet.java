@@ -2,7 +2,6 @@ package com.register;
 
 import java.io.IOException;
 
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,37 +15,40 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/LoginForm")
 public class RegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public RegistrationServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String userName=request.getParameter("userName");
-		String password=request.getParameter("password");
-		if(userName.isEmpty() || password.isEmpty()) {
-			
-			RequestDispatcher req=request.getRequestDispatcher("login.jsp");
+	public RegistrationServlet() {
+		super();
+
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String userName = request.getParameter("userName");
+		String password = request.getParameter("password");
+		if (userName.isEmpty() || password.isEmpty()) {
+
+			RequestDispatcher req = request.getRequestDispatcher("login.jsp");
 			req.include(request, response);
-		}
-		else {
-			RequestDispatcher req=request.getRequestDispatcher("welcome.jsp");
+		} else {
+			RequestDispatcher req = request.getRequestDispatcher("welcome.jsp");
 			req.forward(request, response);
 		}
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 		doGet(request, response);
 	}
 
